@@ -9,7 +9,7 @@ def caesar(text, shift, encrypt=True):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
     if not encrypt:
-        shift = - shift
+        shift = -shift
     
     shifted_alphabet = alphabet[shift:] + alphabet[:shift]
     translation_table = str.maketrans(alphabet + alphabet.upper(), shifted_alphabet + shifted_alphabet.upper())
